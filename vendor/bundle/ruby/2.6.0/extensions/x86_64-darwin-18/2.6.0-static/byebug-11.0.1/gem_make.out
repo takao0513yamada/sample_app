@@ -1,0 +1,19 @@
+current directory: /Users/yamadatakao/Rails_Tutorial_3/sample_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+/Users/yamadatakao/.rbenv/versions/2.6.3/bin/ruby -I /Users/yamadatakao/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20191016-31221-daczq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yamadatakao/Rails_Tutorial_3/sample_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/yamadatakao/Rails_Tutorial_3/sample_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/yamadatakao/Rails_Tutorial_3/sample_app/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20191016-31221-s9h9wf/byebug
