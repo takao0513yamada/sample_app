@@ -18,6 +18,7 @@ class UsersController < ApplicationController
     #               params[:user][:password]
     if @user.save # => Validation
       # Sucess
+      log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
       # GET '/users/#{@user.id}' => show
