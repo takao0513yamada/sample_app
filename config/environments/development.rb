@@ -22,9 +22,10 @@ Rails.application.configure do
       'Cache-Control' => "public, max-age=#{2.days.to_i}"
     }
   else
-    config.action_controller.perform_caching = false
-
-    config.cache_store = :null_store
+    config.action_controller.perform_caching = true
+    config.action_mailer.delivery_method = :test
+    host = 'localhost:3000' # ここをコピペすると失敗します。自分の環境に合わせてください。
+    config.action_mailer.default_url_options = { host: host, protocol: 'http' }
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
